@@ -1,0 +1,5 @@
+file,key_fields,null_field_count,null_cell_count,duplicate_count,total_rows
+08OutputToInvolvedPerson.csv,"OutputId, PersonNumber",1,6423,4665,225674
+12OutputDataset.csv,"OutputId, PersistentIdentifier",1,18,0,2818
+15OutputPublication.csv,"OutputId, IssueNumber",2,84549,95,157182
+19GrantByPersonByDate.csv,"Grant_ID, Person_ID",0,0,164,6735
