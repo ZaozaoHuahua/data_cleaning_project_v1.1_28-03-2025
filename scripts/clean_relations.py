@@ -53,7 +53,7 @@ def check_relation_integrity(file_path: str, filename: str, column_types: dict, 
         print(f" Fail to load: {filename}，Error: {e}")
         return None
 
-# ✅ Main function
+# Main function
 def run_relation_analysis():
     COLUMN_TYPE_FILE = "../config/column_types_master.csv"
     DATA_FOLDER = "../data/"

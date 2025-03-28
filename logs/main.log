@@ -1,8 +1,8 @@
-2025-03-23 19:37:31,862 [INFO] Start execution of the data cleaning main program
-2025-03-23 19:37:31,862 [INFO] Step 1: Count the missing values
-2025-03-23 19:37:37,008 [INFO] Missing values were counted
-2025-03-23 19:37:37,008 [INFO] Step two: Format unified cleaning
-2025-03-23 19:37:51,521 [INFO] Format cleaning completed
-2025-03-23 19:37:51,521 [INFO] Step 3: Relationship integrity analysis
-2025-03-23 19:37:55,353 [INFO] Many-to-many relationship analysis is complete
-2025-03-23 19:37:55,353 [INFO] All tasks have been completed
+2025-03-28 22:15:22,100 [INFO] Start execution of the data cleaning main program
+2025-03-28 22:15:22,100 [INFO] Step 1: Count the missing values
+2025-03-28 22:15:27,341 [INFO] Missing values were counted
+2025-03-28 22:15:27,341 [INFO] Step 2: Format unified cleaning
+2025-03-28 22:15:42,354 [INFO] Format cleaning completed
+2025-03-28 22:15:42,354 [INFO] Step 3: Relationship integrity analysis
+2025-03-28 22:15:46,395 [INFO] Many-to-many relationship analysis is complete
+2025-03-28 22:15:46,395 [INFO] All tasks have been completed

@@ -2,22 +2,25 @@
 
 ## 📁 project structure
 
-(this week)
+(Updated v1.1 28/03/2025)
 project/
 ├── data/                    # Raw CSV data
 ├── cleaned_data/            # Data after preliminary cleaning
+├── cleaned_data_strict/     # Store deduplicated data
 ├── config/
 │   └── column_types_master.csv
 ├── reports/
 │   ├── missing_values_report.csv
 │   └── relation_integrity_report.csv
 ├── logs/
+│   ├── removed_rows/        # To store deleted data
 │   └── main.log             # Main program run log
 └── scripts/
     ├── main.py
     ├── clean_missing.py
     ├── clean_format.py
-    └── clean_relations.py
+    ├── clean_relations.py
+    └── clean_missing_strict.py
 
 ## 🧩 What the module does
 
@@ -40,19 +43,15 @@ project/
 - All three modules are called sequentially
 - Automatically log runs to 'logs/main.log'
 
----
-
-## 🧩 Development plan for next week
-
 ### `clean_missing_strict.py`
-- Goal: Automatically remove invalid records from a many-to-many relational table based on foreign key missing records flagged in relation_integrity_report.csv
-- Requirements:
-  - All records with missing values in key fields should be removed
-  - The deleted records are written to logs/removed_rows/ audit logs
-- Objective: To prepare a structurally complete data subset for subsequent deep analysis
+- Load only 19GrantByPersonByDate.csv from cleaned_data/
+- Remove full-duplicate rows
+- Save cleaned version into cleaned_data_strict/
+- Save duplicate log to logs/removed_rows/
 
 
 ## ✅ Start up
 
 ```bash
 python scripts/main.py
+python scripts/main.py --strict_only
