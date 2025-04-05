@@ -1,0 +1,75 @@
+column,type,description
+AmountGrantedAllSets,real,Total amount granted (all sets)
+CallDecisionYear,integer,Year when grant decision was made
+CallEndDate,date,Deadline for grant application
+CallFullTitle,text,Full title of the call
+GrantEndDate,date,End date of the funding period
+GrantStartDate,date,Start date of the funding period
+FundingInstrumentLevel1,text,Primary classification of funding instrument
+FundingInstrumentPublished,text,Whether the funding instrument is published
+FundingInstrumentReporting,text,Reporting requirements for the funding instrument
+GrantNumber,"	text",Unique grant number
+GrantNumberString,text,Grant number (string format)
+Institute,text,Name of the institute receiving the grant
+InstituteCountry,text,Country where the institute is located
+MainDiscipline,text,Main academic discipline
+MainDisciplineNumber,integer,Main discipline code
+ResearchInstitution,text,Name of the research institution
+State,text,State or region
+Title,text,Project title
+TitleEnglish,text,Project title in English
+YearlyAvg,real,Average funding per year
+DurationYears,real,Duration of the funding in years
+DateList,timestamp,List of dates
+KeywordId,integer,ID of the keyword
+PersonNumber,text,Person identifier number
+Type,text,Type of project or publication
+index,integer,Index field
+InstituteNumber,text,Institute identifier number
+Id,integer,Unique identifier
+Word,text,Keyword content
+OutputId,text,Identifier of the research output
+ContributionTitle,text,Title of the contribution
+Date,date,Date
+Event,text,Related event
+Place,text,Location
+Url,text,Related URL link
+Year,integer,Year
+Country,text,Country
+ResearchGroup,text,Research group
+Abstract,text,Abstract of the publication or project
+PersistentIdentifier,text,"Persistent identifier (e.g., DOI, Handle)"
+PublicationDate,date,Date of publication
+RepositoryLink,text,Link to the repository
+RepositoryName,text,Name of the repository
+TargetGroup,text,Target group for the research or output
+Description,text,Description
+Region,text,Region
+Author,text,Author name
+DOI,text,Digital Object Identifier
+Editor,text,Editor name
+FirstPage,text,Starting page number
+LastPage,text,Ending page number
+ISBN,text,International Standard Book Number
+IssueNumber,text,Journal issue number
+Volume,text,Volume number
+PublicationTitle,text,Title of the publication
+Publisher,text,Publisher name
+OpenAccessStatus,text,Open access availability status
+PeerReviewStatus,text,Peer review status
+ProceedingLocation,text,Location of the proceeding or conference
+ImportSource,text,Source of data import
+FirstName,text,Author's first name
+Surname,text,Author's last name
+Gender,text,Gender
+InstitutePlace,text,Place of the institute
+ORCID,text,ORCID identifier
+Discipline,text,Discipline name
+Discipline_Level1,text,Level 1 discipline category
+Discipline_Level2,text,Level 2 discipline category
+DisciplineLevel,integer,Level of the discipline
+DisciplineNumber,"	text",Discipline number
+ParentDiscipline,text,Parent discipline name
+ParentDisciplineNumber,integer,Parent discipline number
+Grant_ID,text,Grant ID
+Person_ID,text,Person ID

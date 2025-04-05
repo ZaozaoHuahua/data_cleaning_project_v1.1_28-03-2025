@@ -6,7 +6,8 @@ import sys
 from clean_missing import run_missing_check
 from clean_format import run_format_cleaning
 from clean_relations import run_relation_analysis
-from clean_missing_strict import clean_duplicates  # New imports
+from clean_missing_strict import clean_duplicates
+from fill_person_number import fill_missing_person_numbers # New imports
 
 # Logging configuration
 os.makedirs("../logs", exist_ok=True)
@@ -18,7 +19,7 @@ logging.basicConfig(
 )
 
 def main():
-    # Only perform strict deduplication (skip main flow)
+    # Mode One: Only strict deduplication is performed
     if "--strict_only" in sys.argv:
         logging.info("Executing ONLY strict duplicate cleaning (--strict_only)")
         print("Running strict duplicate cleaning only...")
@@ -31,7 +32,20 @@ def main():
             print("Strict duplicate cleaning failed:", e)
         return
 
-    # Normal main flow (excludes strict)
+    # Mode two: Only the PersonNumber fill is performed
+    if "--fill-personnumber" in sys.argv:
+        logging.info("Executing ONLY PersonNumber fill (--fill-personnumber)")
+        print("Running fill_missing_person_numbers only...")
+        try:
+            fill_missing_person_numbers()
+            logging.info("PersonNumber fill completed")
+            print("PersonNumber filling executed successfully.")
+        except Exception as e:
+            logging.error(f"PersonNumber fill failed: {e}")
+            print("PersonNumber fill failed:", e)
+        return
+
+    # Normal main flow
     logging.info("Start execution of the data cleaning main program")
 
     try:
